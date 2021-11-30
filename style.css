@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Road+Rage&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 20vh;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1 {padding-top: 2.4rem;    
+    text-align: center;
+        color: #150000;
+    font-size: 2.4rem;
+    letter-spacing: 6px;
+    text-shadow: 3px 3px 3px #333d38;
+    font-family: 'Carter One';           
+}
+
+section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.gameArea {
+    width: 50%;
+    height: 80%;
+    padding: 20px 0;
+    background: url("bg2.jpg");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px black;
+}
+.btn {
+    font-size: 1.3rem;
+    font-family: 'Road Rage';
+    padding: 3px;
+    border-radius: 6px;
+    margin-top: 6px;
+    cursor: pointer;
+    border: solid 2px #353c4b;
+    
+    text-decoration: none;
+    color: #eb4d4b;
+    width: 25%;
+    height: 60px;
+    
+}
+
+input {
+    border-radius: 25px;
+    margin-top: 4px;
+    width: 50%;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 1.3 rem;
+    font-family: cursive;
+}
+
+button.btn {
+    background: white;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.btn:hover, button.btn:focus, button.btn:active{
+    letter-spacing: 0.12rem;
+    word-spacing: 0.2rem;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.msg {
+    font-size: 1.4rem;
+    font-family: cursive;
+}
+ 
+@media only screen and (max-width: 630px) {
+    .btn {
+        font-size: 1.1rem;
+    }
+    .msg {
+        font-size: 1.1rem;
+    }
+    button.btn:hover, button.btn:focus, button.btn:active{
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .msg {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+    .btn {
+      width: 50%;
+      height: 50px;
+    }
+    input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .msg {
+        font-size: 0.7rem;
+    }
+    .btn {
+        font-size: 0.7rem;
+        height: 40px;
+        padding: 1px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .gameArea {
+        height: 60%;
+    }
+    input {
+        padding: 8px 0;
+    }
+}
