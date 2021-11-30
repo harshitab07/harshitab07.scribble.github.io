@@ -130,7 +130,7 @@ button.btn:hover, button.btn:focus, button.btn:active{
         height: 40px;
         padding: 1px;
     }
-    h1 {
+    h1 { padding-top: 12px;
         font-size: 2rem;
     }
     .gameArea {
