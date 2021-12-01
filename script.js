@@ -31,6 +31,7 @@ if(!play){
     jumbled = scramble(newWord.split("")).join("");
     msg.innerHTML = `Guess the word : ${jumbled}`;
 }
+
 else {
     let user = guess.value;
     if(user===newWord) {
@@ -42,7 +43,9 @@ else {
         guess.value="";
     }
     else {
-        msg.innerHTML = `Opps!! Try Again`;
+        msg.innerHTML = `Try again : ${jumbled}`;
+        guess.value="";
+       
     }
 }
 })
